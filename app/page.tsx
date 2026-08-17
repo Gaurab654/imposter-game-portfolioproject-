@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Wifi, Plus, ArrowRight, Info } from "lucide-react";
 
 export default function Page() {
@@ -20,6 +21,7 @@ interface ImposterHomeProps {
 
 function ImposterHome({ onCreateRoom, onJoinRoom }: ImposterHomeProps) {
   return (
+     
     <div className="min-h-screen w-full bg-[#FAF9F6] flex items-start justify-center px-4 py-8">
       <div className="w-full max-w-sm">
         {/* Top bar: profile avatar with game-info popover */}
@@ -121,6 +123,13 @@ function ProfileBadge() {
           className="h-14 w-14 object-cover"
         />
       </button>
+      <button className="bg-black text-white p-2 rounded-lg">
+     <Link
+    href="/test"
+  >
+    Go to Test database connection
+     </Link>
+   </button>
 
       {open && (
         <div className="absolute left-0 top-[calc(100%+12px)] z-10 w-64 rounded-2xl border border-gray-100 bg-white p-4 shadow-lg">
@@ -135,6 +144,8 @@ function ProfileBadge() {
           </p>
         </div>
       )}
+    
     </div>
+ 
   );
 }
