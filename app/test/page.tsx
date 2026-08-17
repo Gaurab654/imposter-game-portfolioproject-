@@ -18,7 +18,7 @@ export default async function Home() {
         }`}
       />
       <h1 className="text-lg font-semibold text-slate-100">
-        Supabase connection test
+        Supabase connection tests
       </h1>
     </div>
 
