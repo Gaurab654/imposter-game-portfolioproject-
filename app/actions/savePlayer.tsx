@@ -3,9 +3,9 @@
 import { redirect } from "next/navigation";
 
 export async function savePlayer(formData: FormData) {
-  const username = formData.get('username') as string;
-  const isHost = formData.get('is_host') === 'true';
-  const isAlive = formData.get('is_alive') === 'true';
+ // const username = formData.get('username') as string;
+ // const isHost = formData.get('is_host') === 'true';
+ // const isAlive = formData.get('is_alive') === 'true';
 
   // Map directly to your players table schema
   /*const playerData = {
