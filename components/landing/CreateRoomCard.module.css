@@ -1,0 +1,270 @@
+/* Container Frame */
+.mainWrapper {
+  width: 100%;
+  max-width: 960px;
+  background-color: #0c0e17;
+  border: 1px solid #1a1e2e;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* Header Buttons */
+.aiButton {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background-color: #e82542;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.aiButton:hover {
+  opacity: 0.9;
+}
+
+.importButton {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  background-color: #ffffff;
+  color: #0b0c10;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.importButton:hover {
+  opacity: 0.9;
+}
+
+/* Theme Options Grid */
+.themeCard {
+  background-color: #111422;
+  border: 1px solid #1a1e2e;
+  border-radius: 0.75rem;
+  padding: 1.25rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 120px;
+}
+
+.themeCard:hover {
+  border-color: #2a3048;
+}
+
+.selectedCard {
+  background-color: #e82542;
+  border-color: #f83353;
+}
+
+.themeIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom Scroll Progress Indicator */
+.progressBarWrapper {
+  width: 100%;
+  height: 3px;
+  background-color: #1a1e2e;
+  border-radius: 9999px;
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  width: 28%;
+  height: 100%;
+  background-color: #e82542;
+  border-radius: 9999px;
+}
+
+/* Form Styling */
+.inputField {
+  width: 100%;
+  background-color: #111422;
+  border: 1px solid #1a1e2e;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.inputField:focus {
+  border-color: #2a3048;
+}
+
+.selectDropdown {
+  background-color: #111422;
+  border: 1px solid #1a1e2e;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imposterCard {
+  background-color: #111422;
+  border: 1px solid #1a1e2e;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createButton {
+  width: 100%;
+  background-color: #e82542;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.875rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 18px rgba(232, 37, 66, 0.35);
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.createButton:hover {
+  background-color: #d11e38;
+}
+
+/* Toggles & Badges */
+.toggleRow {
+  background-color: #111422;
+  border: 1px solid #1a1e2e;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ruleSummaryBadge {
+  border: 1px solid #e82542;
+  color: #e82542;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s;
+}
+
+.ruleSummaryBadge:hover {
+  background-color: rgba(232, 37, 66, 0.1);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #1e2336;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #e82542;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/* UI Dialog Overrides */
+.dialogContent {
+  max-width: 420px !important;
+  background-color: #0f111a !important;
+  border: 1px solid #1f2436 !important;
+  border-radius: 1rem !important;
+  padding: 1.5rem !important;
+  color: #ffffff !important;
+}
+
+.ruleCard {
+  background-color: #141724;
+  border: 1px solid #1e2336;
+  border-radius: 0.6rem;
+  padding: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.ruleBadge {
+  background-color: #e82542;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.gotItButton {
+  width: 100%;
+  background-color: #e82542;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.gotItButton:hover {
+  background-color: #d11e38;
+}
