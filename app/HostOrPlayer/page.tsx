@@ -1,5 +1,7 @@
 import { savePlayer } from '@/app/actions/savePlayer';
 import styles from './HostOrPlayer.module.css';
+import { Link2 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Host() {
   return (
@@ -56,6 +58,7 @@ export default function Host() {
         <button type="submit" className={styles.submitBtn}>
           ⚡ Let's Go!
         </button>
+        <Link href="/rooms" className={styles.ggs}>rooms</Link>
       </form>
     </div>
   );

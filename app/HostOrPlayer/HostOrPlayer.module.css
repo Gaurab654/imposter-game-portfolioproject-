@@ -62,35 +62,35 @@
 }
 
 .submitBtn {
-
   background: #E31C25;
-
   color: #000000;
-
   border: none;
-
   border-radius: 9999px;
-
   padding: 1rem 3rem;
-
   font-size: 1.25rem;
-
   font-weight: 700;
-
   cursor: pointer;
-
   display: inline-flex;
-
   align-items: center;
-
   gap: 0.5rem;
-
   transition: opacity 0.2s;
-
 }
 
 .submitBtn:hover {
-
   opacity: 0.9;
 
+}
+.ggs {
+  background: #E31C25;
+  color: #000000;
+  border: none;
+  border-radius: 9999px;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s;
 }
