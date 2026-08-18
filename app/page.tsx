@@ -69,7 +69,7 @@ function ImposterHome({ onCreateRoom, onJoinRoom }: ImposterHomeProps) {
         {/* Actions */}
         <div className="mt-4 flex flex-col gap-3">
        <Link
-  href="/Host"
+  href="/HostOrPlayer"
   onClick={onCreateRoom}
   className="w-full flex items-center justify-center gap-2 rounded-full bg-black py-4 text-white font-semibold text-[15px] transition-transform active:scale-[0.98] hover:opacity-90"
 >
@@ -77,7 +77,7 @@ function ImposterHome({ onCreateRoom, onJoinRoom }: ImposterHomeProps) {
   Create Room
 </Link>
       
-          <Link href="/Host"
+          <Link href="/HostOrPlayer"
             type="button"
             onClick={onJoinRoom}
             className="w-full flex items-center justify-center gap-2 rounded-full border border-gray-200 py-4 text-gray-900 font-semibold text-[15px] transition-transform active:scale-[0.98] hover:bg-gray-50"

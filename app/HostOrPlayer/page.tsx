@@ -1,5 +1,5 @@
 import { savePlayer } from '@/app/actions/savePlayer';
-import styles from './Host.module.css';
+import styles from './HostOrPlayer.module.css';
 
 export default function Host() {
   return (
@@ -13,7 +13,7 @@ export default function Host() {
 
         <div className={styles.grid}>
           <div className={styles.fieldGroup}>
-            <span className={styles.label}>Game Server</span>
+            <span className={styles.label}>Game Server (Choose One)</span>
            <div className={styles.badge}>
   <label>
     <input
@@ -40,7 +40,7 @@ export default function Host() {
 
           <div className={styles.fieldGroup}>
             <label htmlFor="username" className={styles.label}>
-              Host Profile
+              Host/Player Profile
             </label>
             <input
               id="username"
